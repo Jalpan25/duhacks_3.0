@@ -1,0 +1,123 @@
+body {
+    margin:0;
+    padding:0;
+    font-family:'Josefin Sans',sans-serif; 
+    color: white;  
+    background: linear-gradient(45deg , #FF6F61 0% , #6B5B95 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+position: fixed;
+background-color:black;
+padding: 10px;
+color: black;
+display:flexbox;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 40px;
+}
+nav .item img{
+width: 200px;
+height: 30px;
+}
+nav .item a{
+text-align: right;
+color: white;
+text-decoration:none;
+margin-left: 200px;
+font-weight: bold;
+}
+
+nav .item a:hover{
+color: red;
+transition: 0s;
+text-decoration:underline;
+}
+.photo_row .ind_photo img{
+width:300px;
+height:auto;
+}
+.photo_row{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.ind_photo
+{
+margin: 50px;
+}
+footer{
+text-align: center;
+padding: 4px;
+background-color: black;
+color:white;
+border-top-style:double;
+}
+
+.container
+{
+position:relative;
+}
+.container .wrapper
+{
+width: 900px;
+height: 500px;
+box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+margin: 5rem auto;
+overflow: hidden;
+}
+.container .wrapper-holder
+{
+display: grid;
+grid-template-columns:repeat(4,100%);
+height: 100%;
+width:100%;
+animation: slider 20s ease-in-out infinite alternate;
+
+}
+
+.container #slider-img-1{
+background-image: url('../img/image2.jpeg');
+background-position: center;
+}
+.container #slider-img-2{
+background-image: url('../img/image3.jpeg');
+background-position: center;
+}
+.container #slider-img-3{
+background-image: url('../img/image13.jpeg');
+background-position: center;
+}
+.container #slider-img-4{
+background-image: url('../img/image13.jpeg');
+background-position: center;
+}
+.container .button-holder .button{
+background-color: white;
+width: 15px;
+height: 15px;
+border-radius: 15px;
+display: inline-block;
+margin: .3rem;
+}
+.container .button-holder{
+position: absolute;
+left:45%;
+bottom:0%;
+}
+@keyframes slider{
+0%{transform: translateX(0%);}
+10%{transform: translateX(-100%);}
+20%{transform: translateX(-100%);}
+30%{transform: translateX(-200%);}
+40%{transform: translateX(-200%);}
+50%{transform: translateX(-200%);}
+60%{transform: translateX(-300%);}
+70%{transform: translateX(-300%);}
+80%{transform: translateX(-300%);}
+90%{transform: translateX(0%);}
+100%{transform: translateX(0%);}
+}
