@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  padding: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+
+nav .item {
+  display: flex;
+  align-items: center;
+}
+
+nav .item img {
+  width: 200px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav .item a {
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  margin-left: 180px; /* Adjust spacing between links */
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+
+nav .item a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 10px; /* Add padding to create the box effect */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Ensure the video stays behind other content */
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+h1 {
+  text-align: center;
+}
+
+textarea, input[type="number"] {
+  width: 97%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#teamsContainer {
+  margin-top: 20px;
+  display: flex; /* Display teams horizontally */
+  flex-wrap: wrap; /* Allow teams to wrap to the next line if needed */
+  justify-content: space-between; /* Distribute teams evenly along the main axis */
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.5); /* Translucent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.team {
+  width: calc(50% - 10px); /* Set the width of each team box */
+  background-color:aqua;
+  margin-right: 10px; /* Add margin between team boxes */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.team:hover {
+  transform: scale(1.05); /* Scale up the team box on hover */
+}
+
