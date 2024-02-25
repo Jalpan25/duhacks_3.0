@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+}
+body {
+    background: url("../img/Lovepik_com-500503201-secure-password-landing.jpg");
+    background-size: cover; 
+    font-family: Arial, sans-serif; 
+}
+nav {
+    background-color: black;
+    padding: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+  }
+  
+  nav .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .item img {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav .item a {
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    margin-left: 180px; /* Adjust spacing between links */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  
+  nav .item a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 10px; /* Add padding to create the box effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+  }
+
+div.main {
+    width: 400px;
+    margin: 100px auto 0; 
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+div.register {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+form#register {
+    margin: 40px;
+}
+
+label {
+    font-style: italic;
+}
+
+input[type="text"], input[type="date"] {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    padding: 7px;
+    background-color: black;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="number"]{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    padding: 7px;
+    background-color: black;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+input[type="submit"] {
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 100, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+label, span, h2 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+button#copyButton {
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 255, 0.8); 
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button#copyButton:hover {
+    background-color: rgba(0, 0, 255, 1);
+}
+
+
+
+.button-container {
+    text-align: center; /* Align buttons in the center */
+}
+
+.button-container input[type="submit"],
+.button-container button {
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 100, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.button-container button#copyButton {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+.button-container input[type="submit"]:hover,
+.button-container button:hover {
+    background-color: rgba(255, 100, 0, 1);
+}
+
+.button-container button#copyButton:hover {
+    background-color: rgba(0, 0, 255, 1);
+}
