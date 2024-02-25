@@ -1,46 +1,76 @@
-*{
-    margin:0;
-    padding:0;
-}
-
-body{
-    background-image: url();
-    background-size:cover ;
-}
-.form-field{
-    width:400px;
-    margin: 30px auto 0px auto;
-}
-h2{
-    text-align: center;
-    padding: 20px;
-    font-family: sans-serif;
-}
-.register{
-    background-color: rgba(0,0,0,0.5);
-    width: 35%;
-    margin-left: 450px;
-    font-size: 18px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background:url('../img/r4.jpg');
+    background-size: cover;
+  }
+  
+  #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 500%;
+  }
+  
+  .register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
     border-radius: 10px;
-    margin-top: 50px;
-    border:1px solid rgba(255,255,255,0.3);
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
-    color:#fff;
-}
-#register{
-    margin-left: 20px;
-}
-
-#submit{
-    width: 200px;
-    padding: 7px;
-    font-family: sans-serif;
-    font-weight: 600;
-    border: none;
-    border-radius: 3px;
-    background-color: rgba(250,100,0,0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .register h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-field label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .form-field input[type="text"],
+  .form-field input[type="password"],
+  .form-field input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-field input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6F61;
     color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border:1px solid rgba(255,255,255,0.3);
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-}
+  }
+  
+  .form-field input[type="submit"]:hover {
+    background-color: #FF4E33;
+  }
+  
+  .form-field a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .form-field a:hover {
+    text-decoration: underline;
+  }
+  
