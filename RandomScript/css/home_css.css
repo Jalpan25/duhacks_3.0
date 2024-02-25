@@ -3,39 +3,65 @@ body {
     padding:0;
     font-family:'Josefin Sans',sans-serif; 
     color: white;  
-    background: linear-gradient(45deg , #FF6F61 0% , #6B5B95 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    animation-name:back ;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
 }
-nav{
-position: fixed;
-background-color:black;
-padding: 10px;
-color: black;
-display:flexbox;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-height: 40px;
+@keyframes back{
+  0%
+  {
+    background-image:url('../img/bg1.jpg');
 }
-nav .item img{
-width: 200px;
-height: 30px;
+50%{
+  background-image:url('../img/bg2.png');
 }
-nav .item a{
-text-align: right;
-color: white;
-text-decoration:none;
-margin-left: 200px;
-font-weight: bold;
+100%{
+  background-image:url('../img/bg3.jpg');
+}
 }
 
-nav .item a:hover{
-color: red;
-transition: 0s;
-text-decoration:underline;
+nav {
+  background-color: black;
+  padding: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
 }
+
+nav .item {
+  display: flex;
+  align-items: center;
+}
+
+nav .item img {
+  width: 200px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav .item a {
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  margin-left: 180px; /* Adjust spacing between links */
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+
+nav .item a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 10px; /* Add padding to create the box effect */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
 .photo_row .ind_photo img{
 width:300px;
 height:auto;
@@ -57,10 +83,70 @@ color:white;
 border-top-style:double;
 }
 
-.container
-{
-position:relative;
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer; /* Change cursor on hover */
 }
+
+.canvas-container {
+  position: relative;
+  width: 400px; /* Adjust as needed */
+  height: 240px; /* Adjust as needed */
+  border: 10px solid transparent; /* Set initial transparent border */
+  border-radius: 5px;
+  overflow: hidden;
+  animation: animateBorder 5s linear infinite; /* Apply animation */
+}
+
+@keyframes animateBorder {
+  0% {
+    border-color: #4b0082; /* Start color of the border */
+  }
+  50% {
+    border-color: #ffd700; /* Mid color of the border */
+  }
+  100% {
+    border-color:#000080; /* End color of the border */
+  }
+}
+
+.image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-info img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.image-info h2 {
+  text-align: center;
+  color: black;
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.image-info h2:hover {
+  color: black;
+  background-color: rgb(234, 30, 170);
+  border-radius: 4px;
+  padding: 5px 10px; /* Add padding to create the box effect */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
 .container .wrapper
 {
 width: 900px;
@@ -75,26 +161,39 @@ display: grid;
 grid-template-columns:repeat(4,100%);
 height: 100%;
 width:100%;
-animation: slider 20s ease-in-out infinite alternate;
-
+animation: slider 15s ease-in-out infinite;
 }
 
 .container #slider-img-1{
-background-image: url('../img/image2.jpeg');
+background-image: url('../img/slider3.png');
 background-position: center;
+
 }
 .container #slider-img-2{
-background-image: url('../img/image3.jpeg');
+background-image: url('../img/slider4.png');
 background-position: center;
+
 }
 .container #slider-img-3{
-background-image: url('../img/image13.jpeg');
+background-image: url('../img/slider5.png');
 background-position: center;
+
 }
 .container #slider-img-4{
-background-image: url('../img/image13.jpeg');
+background-image: url('../img/randomwinner.png');
 background-position: center;
 }
+.container #slider-img-1,
+.container #slider-img-2,
+.container #slider-img-3,
+.container #slider-img-4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%; 
+}
+
 .container .button-holder .button{
 background-color: white;
 width: 15px;
