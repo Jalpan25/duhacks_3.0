@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="../css/qr.css">
+</head>
+<body>
+    <nav>
+        <div class="item">
+            <img src="../img/website_logo.jpg">
+            <a href = "home.html">Home</a>
+            <a href = "about_us.html">About Us</a>
+            <a href = "register.html">Register</a>
+        </div>
+    </nav>  
+    <div class="background-video">
+        <video autoplay muted loop id="video-bg">
+            <source src="../img/bg123.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="input-section">
+            <input type="text" id="urlInput" placeholder="Enter URL">
+            <button onclick="generateQR()">Generate QR Code</button>
+        </div>
+        <div id="qrCodeContainer" class="qr-code-container hidden">
+            <img id="qrCodeImg" alt="QR Code">
+        </div>
+    </div>
+
+    <script src="qr.js"></script>
+</body>
+</html>
