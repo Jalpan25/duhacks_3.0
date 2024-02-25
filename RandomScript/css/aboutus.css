@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: wheat;
+  }
+  
+  nav {
+    background-color: black;
+    padding: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+  }
+  
+  nav .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .item img {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav .item a {
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    margin-left: 180px; /* Adjust spacing between links */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  
+  nav .item a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 10px; /* Add padding to create the box effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+  }
+.social-icons img {
+  width: 30px;
+  margin-right: 53px;
+}
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+ 
+  .column {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  /* Add hover effect to the card */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust the hover effect for the button */
+.card:hover .button {
+  background-color: #333;
+}
+
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 4px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+    background-color: rgb(239, 222, 203);
+    
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .footer { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+}
