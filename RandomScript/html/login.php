@@ -40,7 +40,7 @@
 <body>
 <div id="bg"></div>
 
-<form action="http://localhost/Restaurant/html/login.php" method="post">
+<form action="login.php" method="post">
   <div class="form-field">
     <input type="text" placeholder="Username" name="uname" required/>
   </div>
