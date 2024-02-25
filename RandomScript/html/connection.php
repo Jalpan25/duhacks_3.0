@@ -32,9 +32,9 @@
     // Set up the email content
     $mail->isHTML(true);
     $mail->Subject = '🎉 Welcome to RandomScript! 🎉';
-    $mail->Body = 'We're thrilled to have you join our community of randomness enthusiasts! At Random Script, we believe in the power of randomness to bring excitement and efficiency to various aspects of life. Whether you're in need of a random QR code, a randomly generated team, a robust password, or even selecting a random winner, our platform has got you covered.
+    $mail->Body = 'We're thrilled to have you join our community of randomness enthusiasts! At RandomScript, we believe in the power of randomness to bring excitement and efficiency to various aspects of life. Whether you're in need of a random QR code, a randomly generated team, a robust password, or even selecting a random winner, our platform has got you covered.
 As a new member, you've taken the first step towards unlocking a world of endless possibilities. Your journey with us begins now, and we can't wait to see how you'll utilize our tools to enhance your projects, events, or daily tasks.📧 But wait, there's more! 📧 We've just sent you a welcome email containing important information about your account and how to get started. Be sure to check your inbox (and spam folder, just in case!) to ensure you don't miss out on anything.
-Once again, welcome to Random Script! Let's embrace the randomness together and make every moment a little more unpredictable and exciting.
+Once again, welcome to RandomScript! Let's embrace the randomness together and make every moment a little more unpredictable and exciting.
 
 Best regards,
 RandomScript Team';
