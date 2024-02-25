@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Generator</title>
+  <link rel="stylesheet" href="../css/TeamG_Css.css">
+</head>
+<body>
+  <nav>
+    <div class="item">
+        <img src="../img/website_logo.jpg">
+        <a href = "home.html">Home</a>
+        <a href = "about_us.html">About Us</a>
+        <a href = "register.html">Register</a>
+    </div>
+</nav>   
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="../img/bg1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="container">
+    <h1>TEAM GENERATOR</h1>
+    <textarea id="names" rows="5" placeholder="Enter names separated by commas"></textarea>
+    <label for="teamNumber">Number of Teams:</label>
+    <input type="number" id="teamNumber" min="1" value="1">
+    <button id="generateButton">Generate Teams</button>
+    <div id="teamsContainer" class="glass">
+      <!-- Teams will be dynamically generated here -->
+    </div>
+  </div>
+  <script src="TeamG_JS.js"></script>
+</body>
+</html>
